@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #F5F5F7;
+}
+/*Nav Bar(Header)*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    width: 100%;
+    background-color: #FBFBFD;
+}
+.ara{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 25px;
+    height: 30px;
+    color: #A4DD01;
+}
+.ara a{
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2rem 20rem 2rem 2rem;
+}
+.search_box{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.search_box input{
+    padding: 9px;
+    width: 200px;
+    background-color: rgb(255, 252, 252);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.search_box i{
+    padding: 0.66rem;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(41,80,179);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+}
+.search_box:hover {
+    background-color: rgb(41,80,179);
+}
+.search_box:hover #kerkoEntry{
+    background-color: rgb(41,80,179);
+    color: white;
+}
+.search_box:hover #kerkoIcon{
+    color: rgb(41,80,179);
+    background-color: white;
+}
+
+.acc{
+    display: flex;
+    align-items: center;
+}
+.acc a{
+    padding-left: 0rem;
+    color: #333333;
+}
+.kazan{
+    display: block;
+}
+.kazan i{
+    font-size: 23px;
+}
+.sepet{
+    margin-left: 80px;
+    cursor: pointer;
+}
+.sepet i{
+    font-size: 25px;
+}
+/*  Govde(CONTENT) */
+.container{
+    display: flex;
+    margin-top: 10px;
+
+    justify-content: space-between;
+}
+nav{
+    position: relative;
+    margin-left: 30px;
+    flex-direction: column;
+    width: 30%;
+}
+.sidebar{
+    display: flex;
+    padding: 1px;
+    flex-direction: column;
+}
+.filter{
+    display: none;
+    width: 100%;
+    height: 90px;
+    background-color: #333333;
+}
+.kart{
+    display: block;
+    width: 100%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgb(0, 0, 0 , 25%), 0 10px 10px rgb(0, 0, 0 , 22%);
+    transition: .4s;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.kart .galeri{
+     width: 80%;
+     height: 198px;
+     margin-left: 10%;
+     overflow-y:scroll;
+     
+}
+.kart img{
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.kart .buton{
+   display: block;
+   text-align: center;
+   width: 98%;
+   height: 30px;
+   font-size: 15px;
+   border-radius: 14px;
+   background-color: rgb(41,80,179);
+   padding: 15px;
+   transition: background-color .2s;
+   cursor: pointer;
+   margin: 10px;
+   transition: 0.5s;
+}
+.kart .buton:hover {
+    box-shadow: 0 0 0 3px rgba(46, 46, 46, 0.7);
+    transform: scale(1.004);
+}
+
+.kart h3{
+    text-align: center;
+
+}
+.kart ul p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+}
+.kart .ozel{
+    padding-top: 10px;
+}
+.kart .fiyat{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.kart .fiyat sup{
+    font-size: 15px;
+}
+/*Kart 1*/
+.kart1{
+    width: 70%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgb(0, 0, 0 , 25%), 0 10px 10px rgb(0, 0, 0 , 22%);
+    transition: .4s;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    right: 15%;
+    position: relative;
+    margin-left: 20%;
+}
+.kart1 img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.kart1 ul{
+    flex-direction: column;
+}
+.kart1 .buton{
+   display: block;
+   text-align: center;
+   width: 98%;
+   height: 30px;
+   font-size: 15px;
+   border-radius: 14px;
+   background-color: rgb(41,80,179);
+   padding: 15px;
+   transition: background-color .2s;
+   cursor: pointer;
+   margin: 10px;
+   transition: 0.5s;
+}
+.kart1 .buton:hover {
+    box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.7);
+    transform: scale(1.004);
+}
+.kart1 .buton a{
+    display: block;
+    color: #fff;
+    position: relative;
+    bottom: 7px;
+    width: 100%;
+}
+.kart1 h3{
+    text-align:left;
+    margin-bottom: 120px;
+    padding-left: 40px;
+}
+.kart1 ul{
+    flex-direction: column;
+}
+.kart1 input{
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    border: #333333 2px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.kart1 .credi input{
+    font-size: 15px;
+    margin: 0;
+    border: #333333 2px solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.kart1 .cvc{
+    width: 60px;
+}
+.kart1 .info{
+    text-align: center;
+    margin-left: 50px;
+}
+.kart1 .info1{
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.kart1 .valid{
+    width: 80px;
+}
+.kart1 .credi{
+    text-align: center;
+    margin-top: 15px;
+}
+.kart1 .konum{
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.kart1 .bankno{
+    margin-top: 0px;
+    width: 300px;
+}
+.kart1 .ozel{
+    padding-top: 10px;
+}
+.kart1 .fiyat{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #333333;
+}
+.kart1 .adressa{
+    width: 140px;
+}
+.kart1 .fiyat sup{
+    font-size: 15px;
+}
+/* Search Bar Active */
+.filter{
+    position: absolute;
+    left: 370px;
+    top: 70px;
+    display: none;
+    color: #333333;
+    width: 375px;
+    height: 700px;
+    background-color: #f2f2f2;
+    box-shadow: 0 14px 28px rgb(0, 0, 0 , 25%), 0 10px 10px rgb(0, 0, 0 , 22%);
+    overflow-y: scroll;
+    transition: 0.5s;
+}
+.am{
+    display: block;
+}
+.filter::-webkit-scrollbar{
+    display:none;
+}
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+.product img{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product .detail{
+    font-size: 15px;
+    color: #333333;
+}
