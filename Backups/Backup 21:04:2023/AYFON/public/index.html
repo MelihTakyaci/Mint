@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint-KS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="icon" href="image/mintlogo.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="mobilebar">
+            <span class="line-top"></span>
+            <span class="line-mid"></span>
+            <span class="line-bot"></span>
+        </div>
+        <div class="ara">
+            <a class="logol" href="index.html"><img src="image/mintlogo.png" class="logo"></a>
+            <a href="index.html" class="win">Mint</a>
+        </div>
+        <div class="search_box" class="ac">
+            <input id="kerkoEntry" class="arabul" type="text" placeholder="Kërko" onkeyup="search()">
+            <i id="kerkoIcon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="acc">
+            <a href="Cekilis.html" class="kazan"><i class="fa-solid fa-gift"></i> Menu</a>
+            <div class="shopping">
+                <i class="fa-solid fa-cart-shopping" class="shoplogo"></i>
+                <span class="bildirim"></span>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+
+    </section>
+    <div class="container" id="container">
+        <div class="paybg">
+        <div class="payment">
+            <div class="payment-logo">
+              <img src="image/sepety.png">
+            </div>
+            <!-- <h2>Payment</h2> -->
+            <div class="xbut">
+            <span class="line top"></span>
+            <span class="line bot"></span>
+            </div>
+            <div class="form">
+              <div class=" space icon-relative">
+                <label class="label">Card holder:</label>
+                <input type="text" class="input" placeholder="Emri Mbiemri">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class=" space icon-relative">
+                <label class="label">Adrress:</label>
+                <input type="text" class="input" placeholder="Adressa">
+                <i class="far fa-solid fa-house"></i>
+              </div>
+              <div class=" space icon-relative">
+                <label class="label">Komuna:</label>
+                <input type="text" class="input" placeholder="Komuna">
+                <i class="far fa-solid fa-city"></i>
+              </div>
+              <div class=" space icon-relative">
+                <label class="label">E-Mail:</label>
+                <input type="email" class="input" placeholder="example@email.com">
+                <i class="far fa-regular fa-at"></i>
+              </div>
+              <div class=" space icon-relative">
+                <label class="label">Telefon:</label>
+                <input type="text" class="input" data-mask="+000 000 000 000" placeholder="+000 001 111 111">
+                <i class="far fa-solid fa-mobile"></i>
+              </div>
+              <div class=" space icon-relative">
+                <label class="label">Card number:</label>
+                <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+                <i class="far fa-credit-card"></i>
+              </div>
+              <div class="card-grp space">
+                <div class="card-item icon-relative">
+                  <label class="label">Expiry date:</label>
+                  <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="MM / YY">
+                  <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="card-item icon-relative">
+                  <label class="label">CVC:</label>
+                  <input type="text" class="input" data-mask="000" placeholder="000">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+                
+              <div class="btn">
+                Pay:<div class="total1">0</div><i class="fa-euro fa-solid"></i>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="afilter">
+            <div class="sidefbar">
+                <span>Filter</span>
+                <button class="buton-deger" onclick="filterProduct('all')">All</button>
+                <button class="buton-deger" onclick="filterProduct('elektronik')">Elektronik</button>
+                <button class="buton-deger" onclick="filterProduct('accessory')">Accessory</button>
+                <button class="buton-deger" onclick="filterProduct('creativity')">Creativity</button>
+                <button class="buton-deger" onclick="filterProduct('gaming')">Gaming</button>
+            </div>
+         </div>
+    <div class="mobilebarmenu">
+        <span><i class="fa-solid fa-bars"></i>Menu</span>
+        <div class="search_mobile" class="ac">
+            <input id="kerkoEntrym" class="arabul" type="text" placeholder="Kërko" onkeyup="searchm()">
+            <i id="kerkoIcon" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="mobilebarlink">
+            <a><i class="fa-solid fa-house"></i>Home</a>
+            <a><i class="fa-solid fa-gift"></i>Gift</a>
+        </div>
+        <div class="mobfilter"><span><i class="fa-solid fa-arrow-up-wide-short"></i>Filter</span>
+            <button class="buton-mobile" onclick="filterProduct('all')">All</button>
+            <button class="buton-mobile" onclick="filterProduct('elektronik')">Elektronik</button>
+            <button class="buton-mobile" onclick="filterProduct('accessory')">Accessory</button>
+            <button class="buton-mobile" onclick="filterProduct('creativity')">Creativity</button>
+            <button class="buton-mobile" onclick="filterProduct('gaming')">Gaming</button></div>
+    </div>
+
+    <div class="list">
+            
+    </div>
+    <div>
+        <div class="card">
+            <h1>Card</h1>
+            <ul class="listCard">
+            </ul>
+            <div class="checkOut">
+                <div class="buy" onclick="credit()"><div class="total">0</i></div><i class="fa fa-euro" class="tote"></i></div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
+<script src="AYFON/app.js"></script>
+<script src="javascript/SearchEngine.js"></script>
+<script src="./javascript/checkIfFirstVisit.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="./javascript/NavBarSticky.js"></script>
+<script src="./javascript/ShopCard.js"></script>
+<script src="./javascript/FilterItem.js"></script>
+<script src="./javascript/reloadCard.js"></script>
+<script src="./javascript/mobileMenu.js"></script>
+<script src="./javascript/load.js"></script>
+<!-- <script>//?checkIfFirstVisit()</script> -->
